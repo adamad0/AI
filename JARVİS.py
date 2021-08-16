@@ -102,14 +102,6 @@ def response(voice):
         webbrowser.get().open(url)
         speak(search,"'nun ligini burada buldum")
         
-    if "hangi gün" in voice:
-        speak("Bugün 4 temmuz, günlerden baş kokôreç orçunun doğum günü. Doğum günün kutlu olsun büyük üstâd")
-        url= "https://cdn.discordapp.com/attachments/661458407471054848/840123707774992414/unknown.png"
-        webbrowser.get().open(url)
-        speak("bu resimi orçun varol için editledik")
-        
-    if "hediye" in voice:
-        speak("hediye için ilk önce kendilerinin istanbula teşrif etmesi gerekiyor")
     
     
     if "çevir" in  voice:
