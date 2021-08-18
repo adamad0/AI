@@ -16,7 +16,7 @@ def mine(transactions,previous_hash,difficulty):
             return hash
 
 def main():
-    difficulty = 6
+    difficulty = 20
     transactions = "ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb"
     previous_hash = "000000000000000000060971da2108d0541e846a1135e98909a4f0e06c230b28"
     start_time = time.time()
