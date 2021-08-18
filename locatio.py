@@ -1,8 +1,20 @@
 from geolite2 import geolite2
+import socket
 
-def my_ip_location(my_ip):
+from ip2geotools.databases.noncommercial import DbIpCity
+
+
+url= input("Insert a URL:")
+IP=socket.gethostbyname(url)
+
+response=DbIpCity.get(IP,api_key="free")
+
+print("IP:",IP)
+
+
+def iplocation(ip):
     reader = geolite2.reader()
-    location = reader.get(my_ip)
+    location = reader.get(ip)
 
 
     a=(location['city']['names']['en'])
@@ -22,6 +34,6 @@ def my_ip_location(my_ip):
     
 
 
-my_ip = ('')
+ip = IP
 
-my_ip_location(my_ip)
+iplocation(ip)
