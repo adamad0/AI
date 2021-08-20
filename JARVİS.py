@@ -113,9 +113,9 @@ def response(voice):
     if "kanser" in voice:
         os.system("start desktop\LeagueofLegends")
         speak("Kanser uygulaması açılıyor")
-        pyautogui.write("adamado05")
+        pyautogui.write("kullanıcı adı")
         pyautogui.press("Tab")
-        pyautogui.write("*********")
+        pyautogui.write("şifre")
         pyautogui.press("Enter")
     
     if "valorant" in voice:
